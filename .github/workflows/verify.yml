@@ -27,7 +27,7 @@ jobs:
 
     - name: Post Success Comment
       if: success()
-      uses: maroon-v/pull-request-comment-action@v1.1.0
+      uses: thollander/actions-comment-pull-request@v2
       with:
         message: |
           ### ✅ Logic Verified!
@@ -40,7 +40,7 @@ jobs:
     
     - name: Failure Comment
       if: failure()
-      uses: maroon-v/pull-request-comment-action@v1.1.0
+      uses: thollander/actions-comment-pull-request@v2
       with:
         message: "### ❌ LOGIC COLLAPSE\nThe automated suite has detected that 1 is no longer 1. Please fix the broken logic before merging."
         github_token: ${{ secrets.GITHUB_TOKEN }}
