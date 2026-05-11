@@ -1,6 +1,6 @@
 ---
 name: ✨ Feature Request
-description: Propose a delightfully overengineered way to prove that 1 is 1
+about: Propose a delightfully overengineered way to prove that 1 is 1
 title: "feat: "
 labels: ["enhancement"]
 assignees: []
