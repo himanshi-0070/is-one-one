@@ -1,6 +1,6 @@
 ---
 name: 🐛 Bug Report
-description: Report a mathematical anomaly where 1 may not be behaving like 1
+about: Report a mathematical anomaly where 1 may not be behaving like 1
 title: "bug: "
 labels: ["bug"]
 assignees: []
