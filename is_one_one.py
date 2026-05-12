@@ -54,6 +54,16 @@ def is_one_just_to_be_sure():
         is_one_using_interdimensional_tax_fraud(), # 👈 added here also (extra chaos 😄)
     ])
 
+
+
+def is_one_using_roman_numerals():
+    roman="I"
+    roman_values={"I":1,"V":5,"X":10}
+    total=0
+    for char in roman:
+        total+= roman_values[char]
+    return total == 1
+
 def main():
     checks = [
         is_one,
@@ -61,6 +71,7 @@ def main():
         is_one_just_to_be_sure,
         is_one_using_time_travel, 
         is_one_using_interdimensional_tax_fraud,  # 👈 IMPORTANT
+        is_one_using_roman_numerals,
     ]
   
     print("🧠 Running overengineered checks to see if 1 == 1:\n")
