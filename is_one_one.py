@@ -58,6 +58,14 @@ def is_one_under_extreme_pressure():
         
     return current["val"] == 1
 
+def is_one_using_roman_numerals():
+    roman="I"
+    roman_values={"I":1,"V":5,"X":10}
+    total=0
+    for char in roman:
+        total+= roman_values[char]
+    return total == 1
+
 def is_one_just_to_be_sure(): 
     # The ultimate recursive confirmation
     return all([
@@ -71,13 +79,6 @@ def is_one_just_to_be_sure():
 
 
 
-def is_one_using_roman_numerals():
-    roman="I"
-    roman_values={"I":1,"V":5,"X":10}
-    total=0
-    for char in roman:
-        total+= roman_values[char]
-    return total == 1
 
 def main():
     checks = [
